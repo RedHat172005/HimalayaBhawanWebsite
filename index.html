@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalaya Bhawan - IIT Roorkee Hostel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="Images/logo.jpeg" alt="Himalaya Bhawan Logo" class="header-logo">
+                <h1 class="logo">Himalaya Bhawan</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#team">Bhawan Council</a></li>
+                    <li class="nav-contact"><a href="#contact" class="btn btn-nav">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="subtitle">Welcome to</p>
+                <h1> **Himalaya Bhawan**</h1>
+                <p class="location">Indian Institute of Technology, Roorkee</p>
+                <a href="#about" class="btn btn-primary">Discover Our Bhawan</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title">About Himalaya Bhawan</h2>
+                
+                <div class="about-content-wrapper">
+                    
+                    <div class="image-carousel-container">
+                        <div class="image-carousel">
+                            <img src="Images/Hb1.jpeg" alt="Hostel Exterior View 1" class="carousel-slide">
+                            <img src="Images/Hb-2.png" alt="Hostel Common Room" class="carousel-slide">
+                            <img src="Images/room.png" alt="Hostel Mess Hall" class="carousel-slide">
+                            <img src="Images/Hb photo.jpeg" alt="Hostel Corridor" class="carousel-slide">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="about-text">
+                            <p>Himalaya Bhawan is one of the newest hostels of IIT Roorkee, designed to offer a modern, comfortable, and inclusive living environment for students. Established in <strong>2023</strong>, the Bhawan reflects a blend of contemporary infrastructure and community-oriented spaces.</p>
+                            <p>We house students across multiple floors and are equipped with essential facilities including a dining mess, canteen, common recreational areas, laundry, and high-speed wired internet connectivity. Our focus is on convenience, sustainability, and student well-being.</p>
+                        </div>
+                        <div class="about-stats-wrapper">
+                            <div class="stat-card">
+                                <i class="fas fa-users"></i>
+                                <span class="number">732+</span>
+                                <p>Total Accommodation</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-award"></i>
+                                <span class="number">1st Prize</span>
+                                <p>Bhawan Day 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infrastructure-highlights">
+                    <h3>Infrastructure Highlights</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> High-speed LAN</li>
+                        <li><i class="fas fa-check-circle"></i> Lift Access</li>
+                        <li><i class="fas fa-check-circle"></i> Power Backup</li>
+                        <li><i class="fas fa-check-circle"></i> Fire Safety Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Eco-friendly Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities" class="facilities-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Our Essential Facilities</h2>
+                <div class="facility-grid">
+                    
+                    <div class="facility-card facility-bg-1">
+                        <div class="icon-box"><i class="fas fa-utensils"></i></div>
+                        <h3>Mess</h3>
+                        <p>Hygienic and well-balanced meals, supervised by the Warden. Separate vegetarian and non-vegetarian arrangements.</p>
+                        <div class="details">
+                            <p><strong>Service:</strong> Daily | <strong>Type:</strong> Veg & Non-Veg</p>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card facility-bg-2">
+                        <div class="icon-box"><i class="fas fa-coffee"></i></div>
+                        <h3>Canteen</h3>
+                        <p>Convenient food facility offering a wide variety of snacks and drinks at reasonable prices.</p>
+                        <div class="details">
+                            <p><strong>Day Timings:</strong> 2:00 pm – 2:00 am</p>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card facility-bg-3">
+                        <div class="icon-box"><i class="fas fa-book-open"></i></div>
+                        <h3>Study Room</h3>
+                        <p>A quiet and focused environment designed for individual study and group discussions.</p>
+                        <div class="details">
+                            <p><strong>Availability:</strong> Open daily for residents</p>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card facility-bg-4">
+                        <div class="icon-box"><i class="fas fa-tshirt"></i></div>
+                        <h3>Laundry</h3>
+                        <p>Dedicated laundry facility to support a structured and time-saving washing process. Paid dhobi service available.</p>
+                        <div class="details">
+                            <p><strong>Shift 1:</strong> 8am-2pm (Tues closed)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card facility-bg-5">
+                        <div class="icon-box"><i class="fas fa-bed"></i></div>
+                        <h3>Guest Rooms</h3>
+                        <p>Comfortable accommodation for visitors and officials. Both AC and Non-AC rooms are available.</p>
+                        <div class="details">
+                            <p><strong>Tariff:</strong> ₹500 per day</p>
+                        </div>
+                    </div>
+                    
+                    <div class="facility-card facility-bg-6">
+                        <div class="icon-box"><i class="fas fa-cut"></i></div>
+                        <h3>Salon</h3>
+                        <p>Provides basic grooming and personal care services in a hygienic environment for resident convenience.</p>
+                        <div class="details">
+                            <p><strong>Timings:</strong> 10:00 am – 7:00 pm</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card facility-bg-7">
+                        <div class="icon-box"><i class="fas fa-pencil-ruler"></i></div>
+                        <h3>Stationery</h3>
+                        <p>Provides access to commonly required writing and study-related supplies conveniently within the Bhawan premises.</p>
+                        <div class="details">
+                            <p><strong>Morning:</strong> 9:00 am – 2:00 pm</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card facility-bg-8">
+                        <div class="icon-box"><i class="fas fa-blender"></i></div>
+                        <h3>Juice Shop</h3>
+                        <p>Offers refreshing beverage options, fresh juices, and light refreshments for a quick and healthy alternative.</p>
+                        <div class="details">
+                            <p><strong>Timings:</strong> 11:00 am – 6:00 pm</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card facility-bg-9">
+                        <div class="icon-box"><i class="fas fa-couch"></i></div>
+                        <h3>Visitors Room</h3>
+                        <p>A comfortable, well-furnished, and air-conditioned space for residents to host their guests.</p>
+                        <div class="details">
+                            <p><strong>Access:</strong> As per hostel guidelines</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Meet the Bhawan Council</h2>
+                <p class="section-subtitle">Guiding the Bhawan towards excellence and student welfare.</p>
+
+                <div class="council-grid">
+                    <div class="council-member">
+                        <img src="images/chiefwarden.png" alt="Prof. Sonal Atreya" loading="lazy">
+                        <h4>Prof. Sonal Atreya</h4>
+                        <p class="role">Chief Warden</p>
+                        <p class="dept">Dept. of Architecture & Planning</p>
+                        <p class="dept">Ph- +91-133228488</p>
+                        <div class="contact-info">
+                            <a href="mailto:sonal.atreya@ar.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+911332284882"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+                    <div class="council-member">
+                        <img src="images/warden.png" alt="Prof. Roopam Shukla" loading="lazy">
+                        <h4>Prof. Roopam Shukla</h4>
+                        <p class="role">Warden</p>
+                        <p class="dept">CoE in Disaster Mitigation & Mgmt</p>
+                        <div class="contact-info">
+                            <a href="mailto:roopam.shukla@dm.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+919582504912"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+
+                    <div class="council-member">
+                        <img src="Images/Vusheshta.jpeg" alt="Visheshta" loading="lazy">
+                        <h4>Prof </h4>
+                        <p class="role">Wellness Warden</p>
+                        <p class="dept">B.Tech Civil Engineering</p>
+                        <div class="contact-info">
+                            <a href="mailto:visheshta@ce.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+919306671110"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+
+                    <div class="council-member">
+                        <img src="Images/Shivangi.jpeg" alt="Shivangi Patel" loading="lazy">
+                        <h4>Shivangi Patel</h4>
+                        <p class="role">Assistant Warden </p>
+                        <p class="dept">Ph.D Humanities & Social Sciences</p>
+                        <div class="contact-info">
+                            <a href="mailto:shivangi_p@hs.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+916398544622"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+
+                    <div class="council-member">
+                        <img src="Images/Komal.jpeg" alt="Komal Bana" loading="lazy">
+                        <h4>Komal Bana</h4>
+                        <p class="role">Assistant Warden</p>
+                        <p class="dept">Ph.D Biotechnology Department</p>
+                        <div class="contact-info">
+                            <a href="mailto:komal_b@bt.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+916398544622"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+                    <div class="council-member">
+                        <img src="Images/Sarayu.jpeg" alt="Sarayu Karnam" loading="lazy">
+                        <h4>Sarayu Karnam</h4>
+                        <p class="role">Bhawan Secretary</p>
+                        <p class="dept">B.Tech Mechanical Engineering</p>
+                        <div class="contact-info">
+                            <a href="mailto:sarayu_k@me.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+917842847838"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+                    <div class="council-member">
+                        <img src="Images/Bindu.jpeg" alt="Bindu Jatoth" loading="lazy">
+                        <h4>Bindu Jatoth</h4>
+                        <p class="role">Wellness Secretary</p>
+                        <p class="dept">B.Tech Computer Science & Engineering</p>
+                        <div class="contact-info">
+                            <a href="mailto:bindu_j@cs.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+919391090754"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+                    <div class="council-member">
+                        <img src="Images/Shweta.jpeg" alt="Shweta Choudhary" loading="lazy">
+                        <h4>Shweta Choudhary</h4>
+                        <p class="role">Mess Secretary</p>
+                        <p class="dept">Ph.D Chemistry Department</p>
+                        <div class="contact-info">
+                            <a href="mailto:shweta_c@cy.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+917015195622"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+                    <div class="council-member">
+                        <img src="Images/Saumya.jpeg" alt="Soumya Sharma" loading="lazy">
+                        <h4>Soumya Sharma</h4>
+                        <p class="role">Cultural Secretary</p>
+                        <p class="dept">B.Tech Civil Engineering</p>
+                        <div class="contact-info">
+                            <a href="mailto:soumya_s@ce.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+917489700198"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+                    <div class="council-member">
+                        <img src="Images/Vishestha.png" alt="Visheshta" loading="lazy">
+                        <h4>Visheshta</h4>
+                        <p class="role">Sports Secretary</p>
+                        <p class="dept">B.Tech Civil Engineering</p>
+                        <div class="contact-info">
+                            <a href="mailto:visheshta@ce.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+919306671110"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+
+                    <div class="council-member">
+                        <img src="Images/Sakshi.jpeg" alt="Sakshi" loading="lazy">
+                        <h4>Sakshi Kumari</h4>
+                        <p class="role">Technical Secretary</p>
+                        <p class="dept">B.Tech Mechanical Engineering</p>
+                        <div class="contact-info">
+                            <a href="mailto:sakshi_k@me.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+919306671110"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+
+                    <div class="council-member">
+                        <img src="Images/Sanayam.jpeg" alt="Visheshta" loading="lazy">
+                        <h4>Sanmaya E M</h4>
+                        <p class="role">Maintainence Secretary</p>
+                        <p class="dept">B.Tech Electronic and Communication Engineering</p>
+                        <div class="contact-info">
+                            <a href="mailto:sanmaya_em@ece.iitr.ac.in"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:+919306671110"><i class="fas fa-phone-alt"></i> Call</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        
+<section id="events" class="events-section section-padding bg-light">
+    <div class="container">
+        <h2 class="section-title">Bhawan Events and Celebrations</h2>
+        <p class="section-subtitle">A glimpse into the vibrant community life and cultural activities.</p>
+
+        <div class="events-slider-container">
+            <div class="events-slider">
+                <img src="Images/Canteen.jpeg" alt="Bhawan Day Celebration" class="event-slide">
+                <img src="Images/Salon.jpeg" alt="Sports Meet" class="event-slide">
+                <img src="Images/Hb-2.png" alt="Fresher's Night" class="event-slide">
+                <img src="images/event-img-4.jpg" alt="Cultural Program" class="event-slide">
+                <img src="images/event-img-5.jpg" alt="Diwali Decorations" class="event-slide">
+                <img src="images/event-img-6.jpg" alt="Holi Celebrations" class="event-slide">
+                <img src="images/event-img-7.jpg" alt="Study Group" class="event-slide">
+                <img src="images/event-img-8.jpg" alt="Outdoor Games" class="event-slide">
+                <img src="images/event-img-9.jpg" alt="Mess Dinner" class="event-slide">
+                </div>
+            <button class="events-prev-btn" aria-label="Previous event group"><i class="fas fa-chevron-left"></i></button>
+            <button class="events-next-btn" aria-label="Next event group"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+        <section id="contact" class="contact-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-details-grid">
+                    <div class="contact-info-box">
+                        <h3>Our Location</h3>
+                        <p><strong>Himalaya Bhawan</strong><br>
+                        Near Department of Mathematics<br>
+                        Indian Institute of Technology, Roorkee<br>
+                        Roorkee – 247667, Uttarakhand, India</p>
+
+                        <h3>Reach Us</h3>
+                        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:himalayabhawan@iitr.ac.in">himalayabhawan@iitr.ac.in</a></p>
+                        <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:01332284056">01332-284056</a></p>
+
+                        <h3>Connect</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/himalaya_bhawan/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="https://forms.gle/rj53vLguswyR9LDA6" target="_blank" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Feedback Form</a>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.205776602497!2d77.89314407519992!3d29.863116975005898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb32070f03265%3A0x8e831c2c31e6c387!2sIIT%20Roorkee!5e0!3m2!1sen!2sin!4v1702657754674!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>Himalaya Bhawan, IIT Roorkee. </p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#facilities">Facilities</a>
+                <a href="mailto:himalayabhawan@iitr.ac.in">Admin</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

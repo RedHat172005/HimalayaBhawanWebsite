@@ -1,0 +1,801 @@
+/* --- 1. Global Styles and Typography --- */
+:root {
+    --color-primary: #1e88e5; /* Modern Blue */
+    --color-secondary: #0d47a1; /* Darker Blue */
+    --color-dark: #333;
+    --color-light: #f4f4f4;
+    --color-white: #ffffff;
+    --color-accent: #ffb300; /* Amber/Gold for highlights */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- 2. Buttons and Utility Classes --- */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-nav {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.bg-light {
+    background-color: var(--color-light);
+}
+
+/* --- 3. Header and Navigation (Aligned) --- */
+.main-header {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    height: 40px; 
+    width: auto;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    align-items: center; 
+}
+
+.nav-list a {
+    color: var(--color-dark);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+    display: block; 
+    padding-top: 5px; 
+}
+
+.nav-contact .btn-nav {
+    padding: 8px 15px;
+}
+
+.nav-list a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover:after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+/* --- 4. Hero Section (UPDATED: Background Image RESTORED) --- */
+.hero-section {
+    /* RESTORED: Image background with dark overlay for readability */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/Hb\ photo.jpeg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white); 
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    /* RESTORED: Text shadow for visibility over the image */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.hero-content .location {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* --- 5. About Section (With Carousel) --- */
+.about-content-wrapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+/* ... (Rest of About/Carousel styles remain the same) ... */
+
+.about-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.about-stats-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.stat-card {
+    flex: 1; 
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--color-accent);
+}
+
+.stat-card .number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+.stat-card p {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* 5b. Image Carousel Styling */
+.image-carousel-container {
+    flex: 1.2; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    max-height: 450px; 
+}
+
+.image-carousel {
+    display: flex;
+    width: 400%; 
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    width: 25%; 
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 20;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: var(--color-primary);
+}
+
+.prev-btn {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.infrastructure-highlights {
+    margin-top: 50px;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.infrastructure-highlights h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+}
+
+.infrastructure-highlights ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+.infrastructure-highlights li {
+    font-size: 1.1rem;
+    color: var(--color-dark);
+}
+
+.infrastructure-highlights li i {
+    color: var(--color-primary); 
+    margin-right: 8px;
+}
+
+
+/* --- 6. Facilities Section (Background Placeholders) --- */
+/* --- 6. Facilities Section (Image Overlay Design) --- */
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.facility-card {
+    /* Set the card size and positioning for children */
+    height: 350px; /* Give a fixed height to make images fill */
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden; /* Crucial to contain the background image */
+    position: relative;
+    color: var(--color-white); /* Text color is white */
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Base style for the image background (::before) */
+.facility-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease; /* Zoom effect on hover */
+    z-index: 1; /* Behind the overlay */
+}
+
+/* Overlay for Text Visibility (::after) */
+.facility-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Start with a dark, opaque overlay */
+    /*background: rgba(0, 0, 0, 0.85); */
+    transition: background 0.4s ease; /* Fade the overlay on hover */
+    z-index: 2; /* Above the image, below the content */
+}
+
+/* Hover Effect: Reveal text and zoom image */
+.facility-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.facility-card:hover::before {
+    transform: scale(1.05); /* Slight zoom on image */
+}
+
+.facility-card:hover::after {
+    /* Reduce the opacity significantly on hover to reveal content */
+     background: rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Content Positioning (Must be above the overlay) */
+.icon-box, .facility-card h3, .facility-card p, .facility-card .details {
+    position: relative; 
+    z-index: 3; /* Must be higher than the overlay (z-index: 2) */
+    text-align: center;
+}
+
+.facility-card .icon-box {
+    color: var(--color-accent); /* Use gold for icons */
+    font-size: 3rem;
+    margin-bottom: 15px;
+    padding-top: 50px; /* Push content down slightly */
+}
+
+.facility-card h3 {
+    font-family: var(--font-heading);
+    color: var(--color-white);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.facility-card p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 20px 20px;
+}
+
+.facility-card .details {
+    /* Hide the details block initially */
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s, max-height 0.3s ease-out;
+    border-top: 1px dashed rgba(255, 255, 255, 0.4);
+    padding-top: 0;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 20px;
+}
+
+/* Reveal Details on Hover */
+.facility-card:hover .details {
+    opacity: 1;
+    max-height: 100px; /* Allow content to slide in */
+    padding-top: 15px;
+}
+/* Facility specific backgrounds (Using ::before) */
+.facility-bg-1::before { background-image: url('images/facility-mess.jpg'); }
+.facility-bg-2::before { background-image: url('Images/Canteen.jpeg'); }
+.facility-bg-3::before { background-image: url('Images/Hb-StudyRoom.jpeg'); }
+.facility-bg-4::before { background-image: url('Images/Laundary.jpeg'); }
+.facility-bg-5::before { background-image: url('images/facility-guestroom.jpg'); }
+.facility-bg-6::before { background-image: url('Images/Salon.jpeg'); }
+.facility-bg-7::before { background-image: url('images/facility-stationery.jpg'); }
+.facility-bg-8::before { background-image: url('Images/Hb-Juice.jpeg'); }
+.facility-bg-9::before { background-image: url('images/facility-visitors.jpg'); }
+
+/* Reset text alignment for mobile on hover (if needed) */
+@media (max-width: 768px) {
+    .facility-card {
+        height: 250px;
+    }
+}
+
+/* --- 7. Team Section (3x3 Grid) --- */
+.council-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    text-align: center;
+}
+
+.council-member {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s;
+    background-color:#f4f4f4
+}
+
+.council-member:hover {
+    transform: scale(1.03);
+}
+
+.council-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid var(--color-primary);
+}
+
+.council-member h4 {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    margin-bottom: 5px;
+}
+
+.council-member .role {
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+}
+
+.council-member .dept {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    min-height: 30px; 
+}
+
+.contact-info a {
+    display: inline-block; 
+    font-size: 0.9rem;
+    margin: 5px 10px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+
+
+
+/* Newwwwwwwwwwwwwwwwwwwwwwwww */ 
+/* --- New 8. Events Section Styles --- */
+
+.events-slider-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 10px 0; /* Add some padding if needed */
+}
+
+.events-slider {
+    display: flex;
+    /* This width must accommodate ALL slides (e.g., 9 slides * 25% width/slide = 225% total width) */
+    width: auto; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.event-slide {
+    /* Each image takes up 1/4th of the container's visible width */
+    min-width: calc(100% / 4); 
+    max-width: calc(100% / 4);
+    height: 350px; /* Fixed height for consistency */
+    object-fit: cover;
+    display: block;
+    border-radius: 5px; /* Slight rounding on images */
+    padding: 5px; /* Space between images */
+}
+
+/* Navigation Buttons for Events Slider - Reusing Carousel styles */
+.events-prev-btn, .events-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(232, 92, 11, 0.5);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 20;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.events-prev-btn:hover, .events-next-btn:hover {
+    background: var(--color-primary);
+}
+
+.events-prev-btn {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.events-next-btn {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Media Query for Mobile (Show 1 image at a time) */
+@media (max-width: 768px) {
+    .event-slide {
+        min-width: 100%; /* Show 1 image on small screens */
+        max-width: 100%;
+        height: 250px;
+    }
+}
+
+
+
+/* --- 8. Contact Section (No Changes) --- */
+.contact-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.contact-info-box {
+    padding: 30px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact-info-box h3 {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--color-light);
+    padding-bottom: 5px;
+}
+
+.contact-info-box p {
+    margin-bottom: 15px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-map iframe {
+    border-radius: 8px;
+}
+
+/* --- 9. Footer --- */
+.main-footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 30px 0;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-footer p {
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: var(--color-light);
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+}
+
+
+/* --- 10. Media Queries (Responsiveness) --- */
+@media (max-width: 992px) {
+    .about-content-wrapper, .contact-details-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-details {
+        order: 2; 
+    }
+    .image-carousel-container {
+        flex: auto;
+        max-height: 300px; 
+        order: 1; 
+    }
+    
+    .council-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header .container {
+        padding: 10px 0;
+    }
+
+    .logo-container {
+        gap: 5px;
+    }
+    .header-logo {
+        height: 30px;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        width: 100%;
+        background-color: var(--color-secondary);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .main-nav.active {
+        display: block;
+        max-height: 500px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 0;
+    }
+
+    .nav-list li a, .nav-list li .btn-nav {
+        display: block;
+        padding: 15px 0;
+        color: var(--color-white);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+    }
+    .nav-list li:last-child a {
+        border-bottom: none;
+    }
+    .nav-list a:after {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .about-stats-wrapper {
+        flex-direction: column; 
+    }
+    .main-footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        margin-top: 15px;
+    }
+    .footer-links a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .council-grid {
+        grid-template-columns: 1fr; 
+    }
+    .infrastructure-highlights ul {
+        flex-direction: column;
+    }
+}
